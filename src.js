@@ -27,6 +27,9 @@ function calculadora(operando, n1, n2) {
   }
   if (operando === 3) {
     return n1 / n2;
+  }
+  if (operando === 4) {
+    return Math.pow(n1, n2);
   } else {
     return false;
   }
@@ -37,6 +40,7 @@ console.log(calculadora(1, 6, 9));
 console.log(calculadora(2, 6, 9));
 console.log(calculadora(3, 6, 9));
 console.log(calculadora(4, 6, 9));
+console.log(calculadora(5, 6, 9));
 
 //--------------------------------------------//
 
