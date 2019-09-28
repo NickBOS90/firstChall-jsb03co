@@ -15,27 +15,28 @@ function multiplicarNumeros(n1, n2) {
 function dividirNumeros(n1, n2) {
   return n1 / n2;
 }
-
-function calculate(n1, n2, operator) {
-  switch (operator) {
-    case 0:
-      sumarNumeros();
-      break;
-    case 1:
-      restarNumeros();
-      break;
-    case 2:
-      multiplicarNumeros();
-      break;
-    case 3:
-      dividirNumeros();
-
-    default:
-      console.log("Operación no válida");
+function calculadora(operando, n1, n2) {
+  if (operando === 0) {
+    return n1 + n2;
+  }
+  if (operando === 1) {
+    return n1 - n2;
+  }
+  if (operando === 2) {
+    return n1 * n2;
+  }
+  if (operando === 3) {
+    return n1 / n2;
+  } else {
+    return false;
   }
 }
 
-calculate(2 + 3);
+console.log(calculadora(0, 6, 9));
+console.log(calculadora(1, 6, 9));
+console.log(calculadora(2, 6, 9));
+console.log(calculadora(3, 6, 9));
+console.log(calculadora(4, 6, 9));
 
 //--------------------------------------------//
 
